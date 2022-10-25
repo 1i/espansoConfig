@@ -1,0 +1,10 @@
+matches:
+  - triggers: [":arch",":clarity"]
+    replace: "Don't sacrifice clarity for brevity when creating a minimal example.\n Use consistent naming and indentation, and include code comments if needed.\n Auto format code."
+  - trigger: ":tabs"
+    replace: use spaces instead of tabs – tabs might not get correctly formatted when pasted elsewhere. Spaces will work everywhere.
+  - triggers: [":arch",":mre"]
+    replace: "Minimal – Use as little code as possible that still produces the same problem.\n Complete – Provide all parts someone else needs to reproduce your problem in the question itself.\n Reproducible – Test the code you're about to provide to make sure it reproduces the problem."
+  - triggers: [":arch",":num"]
+    replace: "when testing any system the number of inouts I would try would be 0, 1, 2, lots."
+  

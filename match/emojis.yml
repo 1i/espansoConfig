@@ -1,0 +1,15 @@
+matches:
+  - trigger: ":shrug"
+    replace: "¯\\_(ツ)_/¯"
+  - trigger: ":flip"
+    replace: (ノ°Д°）ノ︵ ┻┻
+  - trigger: ":fine"
+    image_path: "/Users/posu0001/Pictures/ICONS/fine.jpeg"
+  - trigger: ":cd"
+    replace: "💿"
+  - trigger: ":teapot"
+    replace: "🫖" 
+  - trigger: ":think"
+    replace: "🤔"
+  - trigger: ":mag"
+    replace: "🔎"

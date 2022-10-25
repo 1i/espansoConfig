@@ -1,0 +1,18 @@
+matches:
+  - trigger: ":st"
+    replace: "subl ."
+  - trigger: ":gct"
+    replace: "./gradlew clean test"
+  - trigger: ":gcl"
+    replace: "./gradlew clean"
+  - trigger: ":gcd"
+    replace: "./gradlew clean allDeps"
+  - trigger: ":gdoc"
+    replace: "./gradlew clean buildDocArtifacts"
+  - trigger: ":gdoc"
+    replace: "./gradlew clean asciidoctorPdf"
+
+  - triggers: [":vip", ":curl"]
+    replace: "curl -i http://int-vip-spring-config:8888/vault/default" 
+  - triggers: [":vip", ":curl"]
+    replace: "curl -s http://int-vip-job-manager:8090/management/health" 

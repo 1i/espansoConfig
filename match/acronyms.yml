@@ -1,0 +1,11 @@
+matches:
+  - triggers: [":cid",]
+    propagate_case: true
+    replace: "correlation Id"
+
+  - trigger: ":afaik"
+    propagate_case: true
+    replace: as far as I know
+  - trigger: ":imo"
+    propagate_case: true
+    replace: in my opinon

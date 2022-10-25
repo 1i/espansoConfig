@@ -1,0 +1,17 @@
+matches:
+  - triggers: [":pos","email"]
+    replace: "patrick.osullivan.ie@gmail.com"
+  - triggers: [":pad","email"]
+    replace: "paddy125@hotmail.com"
+  - trigger: ":kr"
+    replace: "Kind regards,\nPatrick"
+  - trigger: ":br"
+    replace: "Best regards,\nPatrick"
+  - trigger: ":tnx"
+    replace: "Thanks very much."
+  - trigger: ":min"
+    replace: "few minutes please"
+  - trigger: ":np"
+    replace: "no problem"
+  - trigger: ":fmi"
+    replace: "for my information, just reiterating my understanding of the issue"

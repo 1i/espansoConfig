@@ -1,0 +1,122 @@
+matches:
+  - trigger: ":tocel"
+    replace: "{{convertToCelsius}}°"
+    vars:
+    - name: convertForm
+      type: form
+      params:
+        layout: |
+          Convert [[number]]
+    - name: convertToCelsius
+      type: shell
+      params:
+       cmd: "echo '({{convertForm.number}} - 32) / 1.8' | bc"
+
+  - trigger: ":fromgmt"
+    replace: "{{convertForm.number}} gmt is {{convertFromGmt}}"
+    vars:
+    - name: convertForm
+      type: form
+      params:
+        layout: |
+          Convert [[number]]
+    - name: convertFromGmt
+      type: shell
+      params:
+       cmd: "expr {{convertForm.number}} + 5"
+
+  - trigger: ":tofah"
+    replace: "{{convertToFahereit}}°"
+    vars:
+    - name: convertForm
+      type: form
+      params:
+        layout: |
+          Convert [[number]]
+    - name: convertToFahereit
+      type: shell
+      params:
+       cmd: "echo '({{convertForm.number}} * 1.8 ) + 32 ' | bc "
+
+  - trigger: ":rdate"
+    replace: "{{mydate}}"
+    vars:
+      - name: mydate
+        type: date
+        params:
+          format: "%Y/%m/%d"
+  - trigger: ":tz"
+    replace: "India +4.5 US -5"
+
+    # so slow
+  - trigger: ":time"
+    replace: "{{resultDate}}"
+    vars:
+    - name: mydate
+      type: shell
+      params:
+        cmd: "date +%H"
+    - name: formattedDate
+      type: shell
+      params:
+        cmd: "echo ' ({{mydate}} + 4.5 ) ' | bc "
+    - name: formattedUSDate
+      type: shell
+      params:
+        cmd: "echo ' ({{mydate}} - 5 ) ' | bc "
+    - name: resultDate
+      type: shell
+      params:
+        cmd: "echo {{time}} UTC {{formattedDate}} India {{formattedUSDate}} US"
+
+  - trigger: ":tomsec"
+    replace: "{{convertSecondsToMilliseconds}} millisecs"
+    vars:
+    - name: convertForm
+      type: form
+      params:
+        layout: |
+          Convert seconds [[number]]
+    - name: convertSecondsToMilliseconds
+      type: shell
+      params:
+       cmd: "echo ' ({{convertForm.number}} * 6000 ) ' | bc "
+
+  - trigger: ":frommsec"
+    replace: "{{convertFromMilliseconds}} secs"
+    vars:
+    - name: convertForm
+      type: form
+      params:
+        layout: |
+          Convert milliseconds [[number]]
+    - name: convertFromMilliseconds
+      type: shell
+      params:
+        #scale is basic Calc precision 
+       cmd: "echo 'scale=2; ({{convertForm.number}} / 1000 ) ' | bc "
+
+  - regex: "=sum\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{result}}"
+    vars:
+      - name: result
+        type: shell
+        params:
+          cmd: "expr $ESPANSO_NUM1 + $ESPANSO_NUM2"
+
+  - regex: "=convert\\((?P<num1>.*?),(?P<num2>.*?)\\)"
+    replace: "{{result}}"
+    vars:
+      - name: result
+        type: shell
+        params:
+          cmd: "
+          if [[$ESPANSO_NUM1 = cel]] 
+          then
+          echo 'Convert Cel'
+          elif [[$ESPANSO_NUM1 = fah]] 
+          then
+          echo 'Convert Fah'
+          else
+          echo 'Unknown Unit'
+          fi"
