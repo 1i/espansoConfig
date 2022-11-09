@@ -7,4 +7,6 @@ matches:
     replace: "Minimal – Use as little code as possible that still produces the same problem.\n Complete – Provide all parts someone else needs to reproduce your problem in the question itself.\n Reproducible – Test the code you're about to provide to make sure it reproduces the problem."
   - triggers: [":arch",":num"]
     replace: "when testing any system the number of inouts I would try would be 0, 1, 2, lots."
+  - triggers: [":arch",":reqs"]
+    replace: "Understand the customer requirements to better give them what they want/need, sometimes they do not know what they want/need. OData example"
   

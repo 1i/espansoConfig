@@ -1,15 +1,17 @@
 matches:
-  - trigger: ":shrug"
+  - triggers: [":shrug",":emoji"]
     replace: "¯\\_(ツ)_/¯"
-  - trigger: ":flip"
-    replace: (ノ°Д°）ノ︵ ┻┻
-  - trigger: ":fine"
+  - triggers: [":flip",":emoji"]
+    replace: "(ノ°Д°）ノ︵ ┻┻"
+  - triggers: [":fine",":images"]
     image_path: "/Users/posu0001/Pictures/ICONS/fine.jpeg"
-  - trigger: ":cd"
+  - triggers: [":cd",":emoji"]
     replace: "💿"
-  - trigger: ":teapot"
+  - triggers: [":teapot",":emoji"]
     replace: "🫖" 
-  - trigger: ":think"
+  - triggers: [":think",":emoji"]
     replace: "🤔"
-  - trigger: ":mag"
+  - triggers: [":mag",":emoji"]
     replace: "🔎"
+  - triggers: [":give",":emoji"]
+    replace: "༼ つ ◕_◕ ༽つ"

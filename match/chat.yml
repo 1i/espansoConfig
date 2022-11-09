@@ -1,7 +1,7 @@
 matches:
-  - triggers: [":pos","email"]
+  - triggers: [":ppos",":email"]
     replace: "patrick.osullivan.ie@gmail.com"
-  - triggers: [":pad","email"]
+  - triggers: [":pad",":email"]
     replace: "paddy125@hotmail.com"
   - trigger: ":kr"
     replace: "Kind regards,\nPatrick"
