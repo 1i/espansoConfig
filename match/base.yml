@@ -27,7 +27,7 @@ matches:
   - trigger: ":dps"
     replace: docker ps
   - trigger: ":trig"
-    replace: "  - triggers: \"[:TODO,]\"\n  replace: \"TODO\""
+    replace: "  - triggers: [\":TODO\",]\n  replace: \"TODO\""
   - trigger: ":file"
     replace: "{{form1.file}}"
     vars:

@@ -2,10 +2,38 @@ matches:
   - triggers: [":cid",]
     propagate_case: true
     replace: "correlation Id"
-
+  - triggers: [":dc",]
+    propagate_case: true
+    replace: "Data center"
+  - triggers: [":doc",]
+    replace: "document"
+  - triggers: [":arch",]
+    propagate_case: true
+    replace: "architecture"
+#Business above  
+  
+  
   - trigger: ":afaik"
     propagate_case: true
-    replace: as far as I know
+    replace: "as far as I know"
   - trigger: ":imo"
     propagate_case: true
-    replace: in my opinon
+    replace: "in my opinon"
+  - trigger: ":imho"
+    propagate_case: true
+    replace: "in my honest opinon"
+  - triggers: [":lunch",]
+    replace: "Going to lunch, back in a while."
+  - triggers: [":back",]
+    replace: "Back now, just catching up."
+
+  
+#Casual
+  - trigger: ":jk"
+    replace: "joke"
+  - trigger: ":tldr"
+    propagate_case: true
+    replace: "Too long didn't read"
+  - trigger: ":cuff"
+    replace: "Off the cuff is the polite way to say unprofessional?"
+    
