@@ -1,6 +1,4 @@
 matches:
-  - trigger: ":st"
-    replace: "subl ."
   - trigger: ":gct"
     replace: "./gradlew clean test"
   - trigger: ":gcl"

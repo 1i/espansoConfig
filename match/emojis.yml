@@ -15,3 +15,7 @@ matches:
     replace: "🔎"
   - triggers: [":give",":emoji"]
     replace: "༼ つ ◕_◕ ༽つ"
+  - triggers: [":wren",":emoji"]
+    replace: "🔧"
+  - triggers: [":work",":emoji"]
+    replace: "🧑‍💼"

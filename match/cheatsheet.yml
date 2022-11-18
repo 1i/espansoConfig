@@ -1,3 +1,24 @@
 matches:
+  #markdown
   - trigger: ":fireball"
     replace: "https://daringfireball.net/projects/markdown/syntax"
+  - trigger: ":mdlink"
+    replace: "[text](link)"
+
+  - trigger: ":test"
+    replace: "Testing, please ignore."
+  
+  #confluence / teams
+  - trigger: ":co"
+    replace: "{code}"
+  - trigger: ":nf"
+    replace: "{noformat}"
+  - trigger: ":clink"
+    replace: "[text|link]"
+
+  #sublime
+  - trigger: ":st"
+    replace: "subl ."
+  - trigger: ":cf"
+    replace: "<current file>"
+  

@@ -10,6 +10,9 @@ matches:
   - triggers: [":arch",]
     propagate_case: true
     replace: "architecture"
+  - triggers: [":true",]
+    propagate_case: true
+    replace: "single source of truth"
 #Business above  
   
   
@@ -33,7 +36,7 @@ matches:
     replace: "joke"
   - trigger: ":tldr"
     propagate_case: true
-    replace: "Too long didn't read"
+    replace: "Too long; Didn't read"
   - trigger: ":cuff"
     replace: "Off the cuff is the polite way to say unprofessional?"
     

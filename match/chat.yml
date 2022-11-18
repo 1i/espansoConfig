@@ -24,3 +24,12 @@ matches:
     replace: "Let me check for a few minutes and get an answer"
   - triggers: [":wrong",]
     replace: "Please correct me if I am wrong"
+  - triggers: [":com",]
+    replace: "is this meant to be commented out?"
+  - triggers: [":call",]
+    replace: "Does now suit for a call? If not when suits you?"
+  - triggers: [":rdy",":ping"]
+    replace: "ping me when you are ready"
+  - triggers: [":exam",]
+    replace: "have you and example you can share/show to me"
+

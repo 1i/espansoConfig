@@ -1,3 +1,5 @@
+# should be longer than the normal 3 letter shortcuts
+# 4 characters are best unless I really know the
 matches:
 - trigger: ":bug"
   replace: "To fight the bug we must understand the bug, we can ill afford another ..."
@@ -15,7 +17,20 @@ matches:
   replace: "keep it simple stupid"
 - trigger: ":kiss"
   replace: "less is more."
-- trigger: ":dev"
+- trigger: ":devil"
   replace: "the devil is in the details"
 - triggers: [":mush",":dark"]
   replace: "I treat them like mushrooms, keep them in the dark and feed them manure."
+
+
+- triggers: [":jug",":idiom"]
+  replace: "Just puring water from one jug to another"
+- triggers: [":sly",":idiom"] # foxes are unhanded?
+  replace: "sly, clever fox"
+- triggers: [":clever",":idiom"] # jurassic park
+  replace: "clever girl... said by a hunter before he was mauled by a dinosaur"
+- triggers: [":disp",":idiom"] # IT crowd
+  replace: "did you see that ludicrous display last night"
+
+
+
