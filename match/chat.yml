@@ -11,7 +11,16 @@ matches:
     replace: "Thanks very much."
   - trigger: ":min"
     replace: "few minutes please"
+
+  - trigger: ":walk"
+    replace: "popping out for a walk"
   - trigger: ":np"
     replace: "no problem"
   - trigger: ":fmi"
     replace: "for my information, just reiterating my understanding of the issue"
+  - triggers: [":terms",]
+    replace: "I may use the terms interchangeably."
+  - triggers: [":check",]
+    replace: "Let me check for a few minutes and get an answer"
+  - triggers: [":wrong",]
+    replace: "Please correct me if I am wrong"

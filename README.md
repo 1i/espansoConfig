@@ -1,3 +1,5 @@
-# My README.md
+# My Espanso Config
 
-# espansoConfig
+https://espanso.org/
+Cross platform text expander.
+:hi -> Hi there!

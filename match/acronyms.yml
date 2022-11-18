@@ -18,10 +18,10 @@ matches:
     replace: "as far as I know"
   - trigger: ":imo"
     propagate_case: true
-    replace: "in my opinon"
+    replace: "in my opinion"
   - trigger: ":imho"
     propagate_case: true
-    replace: "in my honest opinon"
+    replace: "in my honest opinion"
   - triggers: [":lunch",]
     replace: "Going to lunch, back in a while."
   - triggers: [":back",]
