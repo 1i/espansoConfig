@@ -19,5 +19,7 @@ matches:
 
   - triggers: [":hack", ":fun"]
     replace: "docker run -it jess/hollywood" 
+  - triggers: [":lh",]
+    replace: "localhost" 
 
     

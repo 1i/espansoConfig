@@ -13,6 +13,15 @@ matches:
   - triggers: [":true",]
     propagate_case: true
     replace: "single source of truth"
+  - triggers: [":authn",":auths"]
+    propagate_case: true
+    replace: "authorization"
+  - triggers: [":authz",":auths"]
+    propagate_case: true
+    replace: "authentication"
+  - triggers: [":ac",]
+    propagate_case: true
+    replace: "acceptance criteria"
 #Business above  
   
   
@@ -29,6 +38,10 @@ matches:
     replace: "Going to lunch, back in a while."
   - triggers: [":back",]
     replace: "Back now, just catching up."
+  - triggers: [":thou",]
+    replace: "thoughts / comments always appreciated"
+  - triggers: [":mil",]
+    replace: "millennial"
 
   
 #Casual

@@ -1,8 +1,10 @@
 # should be longer than the normal 3 letter shortcuts
 # 4 characters are best unless I really know the
 matches:
-- trigger: ":bug"
-  replace: "To fight the bug we must understand the bug, we can ill afford another ..."
+- triggers: [":bug",":hopper"]
+  replace: "To fight the bug we must understand the bug, we can ill afford another ... Space Marshall Grace Hopper"
+- triggers: [":forgive",":hopper"]
+  replace: "Sometimes it is easier to ask for forgiveness than it is to ask for permission"
 - trigger: ":buddy"
   replace: "I'm an engineer — that means I solve problems. Not problems like 'What is beauty?' because that would fall within the purview of your conundrums of philosophy. I solve practical problems."
 - trigger: ":know"
@@ -21,16 +23,18 @@ matches:
   replace: "the devil is in the details"
 - triggers: [":mush",":dark"]
   replace: "I treat them like mushrooms, keep them in the dark and feed them manure."
+- triggers: [":hard",":ppl"]
+  replace: "I find the hardest part of software development is the people."
+
 
 
 - triggers: [":jug",":idiom"]
   replace: "Just puring water from one jug to another"
-- triggers: [":sly",":idiom"] # foxes are unhanded?
-  replace: "sly, clever fox"
-- triggers: [":clever",":idiom"] # jurassic park
+- triggers: [":clever",":idiom"]
   replace: "clever girl... said by a hunter before he was mauled by a dinosaur"
-- triggers: [":disp",":idiom"] # IT crowd
+- triggers: [":disp",":ludi"]
   replace: "did you see that ludicrous display last night"
-
-
-
+- triggers: [":idea",":shaw"]
+  replace: "Well, now, let me see. You know, I don't have any idea what that means"
+- triggers: [":madeup",":shaw"]
+  replace: "I know what you think it means, sonny. To me, it's just a made-up word. A politician's word, so that young fellas like yourself can wear a suit and a tie and have a job."
