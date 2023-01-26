@@ -5,7 +5,7 @@ matches:
     replace: "(ノ°Д°）ノ︵ ┻┻"
   - triggers: [":fine",":images"]
     image_path: "/Users/posu0001/Pictures/ICONS/fine.jpeg"
-  - triggers: [":cd",":emoji"]
+  - triggers: [":emoji"]
     replace: "💿"
   - triggers: [":teapot",":emoji"]
     replace: "🫖" 

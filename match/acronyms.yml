@@ -28,6 +28,11 @@ matches:
   - trigger: ":afaik"
     propagate_case: true
     replace: "as far as I know"
+  - trigger: ":asi"
+    replace: "as I understand"
+  - trigger: ":und"
+    replace: "I am still unsure that I understand the request"
+    
   - trigger: ":imo"
     propagate_case: true
     replace: "in my opinion"
@@ -42,6 +47,8 @@ matches:
     replace: "thoughts / comments always appreciated"
   - triggers: [":mil",]
     replace: "millennial"
+  - triggers: [":lgtm",":grand"]
+    replace: "looks grand to me"
 
   
 #Casual

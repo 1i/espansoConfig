@@ -9,4 +9,12 @@ matches:
     replace: "when testing any system the number of inouts I would try would be 0, 1, 2, lots."
   - triggers: [":arch",":reqs"]
     replace: "Understand the customer requirements to better give them what they want/need, sometimes they do not know what they want/need. OData example"
+
+  - triggers: [":change",":risk"]
+    replace: "risks of any change are: big change? can it be easily removed? does it change data? does it change APIs? requirements clear?"
+  - triggers: [":asa",]
+    replace: "As a User, \nI want X, \nso that do Y"
+  - triggers: [":asa","asaLine"]
+    replace: "As a User, I want X, so that do Y"
+
   
