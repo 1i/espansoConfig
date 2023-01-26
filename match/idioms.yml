@@ -11,7 +11,7 @@ matches:
   replace: "I do not know what I do not know"
 - trigger: ":many"
   replace: "the needs of the many outweigh the needs of the few."
-- trigger: ":razor"
+- triggers: [":razor", ":mean"]
   replace: "Never attribute to malice that which is adequately explained by stupidity. Hanlon's Razor"
 - trigger: ":razor"
   replace: "Everything should be kept as simple as possible, but not simpler"
@@ -27,6 +27,8 @@ matches:
   replace: "I find the hardest part of software development is the people."
 - triggers: [":hard",":unf"]
   replace: "This conversation has taken an unforunate turn."
+- triggers: [":trial"]
+  replace: "No one is on trial, it is the system that is on trial."
 
 
 
