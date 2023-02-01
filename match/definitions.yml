@@ -26,16 +26,16 @@ matches:
       - A ticket is done when : 
       - Every commit start with a Jira reference. 
       - Minimal set of user friendly descriptive commits. 
-      - You reviewed your changes before submitting the PR. 
+      - You reviewed your own changes before submitting the PR. 
       - In PR review, commented on why change was made to give context to reviewers.
       - The change is adequately convered by unit and acceptance tests.
-      - You have run a full clean build including all unit and acceptance tests.
+      - You have run a full clean build test including all unit and acceptance tests.
       - Run the code coverage/quality plan (Sonar), if available. Ensure no drop in coverage.
       - Relevant test, doc pipelines have executed successfully.
       - Notify team to review.
       - PR Approved by at least two knowledgeable/expert reviewers. No (not yet)
-      - Documentation created/updated.
-      - Any bamboo plan changes are recorded. 
+      - Documentation, customer, or dev readme, created/updated.
+      - Any build plan changes are recorded. NA
       - Copy and paste the above into the PR review description and answer each. - Yes / No (why not) / NA
 
   - triggers: [":prerefine", ":process"]
@@ -53,7 +53,7 @@ matches:
 
   - triggers: [":nfr", ":process"]
     replace: |
-      - Non Functional Requirements
+      - Non Functional Requirements are :
       - Things that a requester may not know/need may be missing from the request.
       - Logging, KPIs, how to support an issue. Using a library.
       - Security, performance

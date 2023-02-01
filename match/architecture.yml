@@ -1,20 +1,26 @@
 matches:
   - triggers: [":arch",":clarity"]
-    replace: "Don't sacrifice clarity for brevity when creating a minimal example.\n Use consistent naming and indentation, and include code comments if needed.\n Auto format code."
+    replace: |
+      Don't sacrifice clarity for brevity when creating a minimal example. 
+      Use consistent naming and indentation, and include code comments if needed. 
+      Auto format code.
   - trigger: ":tabs"
-    replace: use spaces instead of tabs – tabs might not get correctly formatted when pasted elsewhere. Spaces will work everywhere.
+    replace: "use spaces instead of tabs – tabs might not get correctly formatted when pasted elsewhere. Spaces will work everywhere."
   - triggers: [":arch",":mre"]
-    replace: "Minimal – Use as little code as possible that still produces the same problem.\n Complete – Provide all parts someone else needs to reproduce your problem in the question itself.\n Reproducible – Test the code you're about to provide to make sure it reproduces the problem."
+    replace: |
+      Minimal – Use as little code as possible that still produces the same problem.
+      Complete – Provide all parts someone else needs to reproduce your problem in the question itself.
+      Reproducible – Test the code you're about to provide to make sure it reproduces the problem.
   - triggers: [":arch",":num"]
-    replace: "when testing any system the number of inouts I would try would be 0, 1, 2, lots."
+    replace: "when testing any system the number of inputs I would try would be 0, 1, 2, many."
   - triggers: [":arch",":reqs"]
     replace: "Understand the customer requirements to better give them what they want/need, sometimes they do not know what they want/need. OData example"
 
-  - triggers: [":change",":risk"]
+  - triggers: [":arch", ":change",":risk"]
     replace: "risks of any change are: big change? can it be easily removed? does it change data? does it change APIs? requirements clear?"
   - triggers: [":asa",]
     replace: "As a User, \nI want X, \nso that do Y"
-  - triggers: [":asa","asaLine"]
+  - triggers: [":asa",":asaLine"]
     replace: "As a User, I want X, so that do Y"
 
   
