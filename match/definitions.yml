@@ -1,0 +1,67 @@
+matches:
+  - triggers: [":dor",":process"]
+    replace: |
+      - A ticket is ready when : 
+      - Title is clear and accurate. Apply
+      - Description is clear and accurate. Must have user story and acceptance criteria.
+      - WHAT is required must be clear.
+      - WHY must be clear.
+      - There are clear acceptance criteria.
+      - For non trivial tickets there is a high level description (at least one line) for each test scenario required.
+      - Any useful background information is included.
+      - Consider and document dependencies if necessary. E.g. what test infrastructure is required. 
+      - Any internal dependencies are identified. e.g. the ticket may not start until dependencies are done.
+      - Any external dependencies that are required to get the work done are identified and their time required is estimated. SRE, External team
+      - End user documentation is included: E.g: Ops, API guides, README, release notes.
+      - Logging, KPIs, Metrics are considered: do we need to add/improve logging, KPIs, metrics to help with maintenance and support.
+      - If necessary, a detailed low level design is provided. Examples:
+      - To ensure the person refining the ticket understands exactly what needs to be done.
+      - When the person refining the ticket will not be implementing it in the sprint.
+      - If the work is complex and/or must be done in a specific way.
+      - If the work is being passed to someone who is new to the company/team/process/component/system/...
+      - The low level design could be a confluence page and/or a branch in git with skeleton interfaces and classes. 
+
+  - triggers: [":dod", ":process"]
+    replace: |
+      - A ticket is done when : 
+      - Every commit start with a Jira reference. 
+      - Minimal set of user friendly descriptive commits. 
+      - You reviewed your changes before submitting the PR. 
+      - In PR review, commented on why change was made to give context to reviewers.
+      - The change is adequately convered by unit and acceptance tests.
+      - You have run a full clean build including all unit and acceptance tests.
+      - Run the code coverage/quality plan (Sonar), if available. Ensure no drop in coverage.
+      - Relevant test, doc pipelines have executed successfully.
+      - Notify team to review.
+      - PR Approved by at least two knowledgeable/expert reviewers. No (not yet)
+      - Documentation created/updated.
+      - Any bamboo plan changes are recorded. 
+      - Copy and paste the above into the PR review description and answer each. - Yes / No (why not) / NA
+
+  - triggers: [":prerefine", ":process"]
+    replace: |
+      - A ticket is prerefined when :
+      - High level analysis of the requested work.
+      - Ticket may not be clear, may be invalid, work already done.
+      - May need clarifing with ticket requester, PO, external team.
+      - If the ticket request is wrong even with discussing with stakeholders. Ticker should be rejected back to the requester. Notifying why and stakeholders.
+      - If the request is valid but unclear ticket should be updated to be ready for a team refinement meeting or 
+      - The detail of the ticket so that it can be understood by anyone at the refinement meeting.
+      - This audience includes the PO, QA and DEV(s). Three Amigos.
+      - Can we estimate how long it will take and give it a priority.
+
+
+  - triggers: [":nfr", ":process"]
+    replace: |
+      - Non Functional Requirements
+      - Things that a requester may not know/need may be missing from the request.
+      - Logging, KPIs, how to support an issue. Using a library.
+      - Security, performance
+      - Does the requested work go near Tech Debt.  
+
+  - triggers: [":docs", ":process"]
+    replace: |
+      - Docs should be close to the code. in git versioned.
+      - Can change code without changing docs.
+      - Docs need to be published/accessible for all.
+      - The PR process works well for documentation feedback. Except where POs/stakeholders cannot access, review, question.

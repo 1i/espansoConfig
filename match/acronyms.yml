@@ -5,8 +5,6 @@ matches:
   - triggers: [":dc",]
     propagate_case: true
     replace: "Data center"
-  - triggers: [":doc",]
-    replace: "document"
   - triggers: [":arch",]
     propagate_case: true
     replace: "architecture"

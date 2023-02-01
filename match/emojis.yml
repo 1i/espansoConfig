@@ -19,3 +19,7 @@ matches:
     replace: "🔧"
   - triggers: [":work",":emoji"]
     replace: "🧑‍💼"
+  - triggers: [":yesno",":emoji"]
+    replace: "✔️ ❌"
+  - triggers: [":thumbs",":emoji"]
+    replace: "👍 👎"
