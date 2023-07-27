@@ -23,19 +23,35 @@ matches:
 
   - triggers: [":dod", ":process"]
     replace: |
-      - A ticket is done when : 
+      - Defination of Done : 
+      - Every commit start with a Jira reference. 
+      - Minimal set of user friendly descriptive commits. 
+      - You reviewed your own changes before submitting the PR. 
+      - In PR review, comment on why change was made to give context to reviewers.
+      - The change is adequately covered by unit and acceptance tests.
+      - You have run a full clean build test including all UTs & ATs.
+      - Run the code coverage/quality plan (Sonar), if available. Ensure no drop in coverage.
+      - Relevant test, doc pipelines have executed successfully.
+      - PR Approved by at least two knowledgeable/expert reviewers. No (not yet)
+      - Documentation, customer, or dev readme, created/updated.
+      - Any build plan changes are recorded. NA
+
+  - triggers: [":dod", ":process"]
+    replace: |
+      - Defination of Done : 
       - Every commit start with a Jira reference. 
       - Minimal set of user friendly descriptive commits. 
       - You reviewed your own changes before submitting the PR. 
       - In PR review, commented on why change was made to give context to reviewers.
-      - The change is adequately convered by unit and acceptance tests.
+      - The change is adequately covered by unit and acceptance tests.
       - You have run a full clean build test including all unit and acceptance tests.
       - Run the code coverage/quality plan (Sonar), if available. Ensure no drop in coverage.
       - Relevant test, doc pipelines have executed successfully.
-      - Notify team to review.
+      
       - PR Approved by at least two knowledgeable/expert reviewers. No (not yet)
       - Documentation, customer, or dev readme, created/updated.
       - Any build plan changes are recorded. NA
+      - Notify team to review.
       - Copy and paste the above into the PR review description and answer each. - Yes / No (why not) / NA
 
   - triggers: [":prerefine", ":process"]
@@ -61,7 +77,7 @@ matches:
 
   - triggers: [":docs", ":process"]
     replace: |
-      - Docs should be close to the code. in git versioned.
-      - Can change code without changing docs.
+      - Docs should be close to the code. in git and versioned.
+      - Can change docs without changing the code.
       - Docs need to be published/accessible for all.
       - The PR process works well for documentation feedback. Except where POs/stakeholders cannot access, review, question.

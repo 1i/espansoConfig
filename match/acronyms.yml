@@ -8,7 +8,7 @@ matches:
   - triggers: [":arch",]
     propagate_case: true
     replace: "architecture"
-  - triggers: [":true",]
+  - triggers: [":truth",]
     propagate_case: true
     replace: "single source of truth"
   - triggers: [":authn",":auths"]

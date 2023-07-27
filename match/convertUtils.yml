@@ -46,7 +46,7 @@ matches:
         params:
           format: "%Y/%m/%d"
   - trigger: ":tz"
-    replace: "India +4.5 US -5"
+    replace: "India +5.5 US -5"
 
     # so slow
   - trigger: ":time"

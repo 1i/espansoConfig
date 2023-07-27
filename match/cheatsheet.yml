@@ -9,7 +9,7 @@ matches:
     replace: "Testing, please ignore."
   
   #confluence / teams
-  - trigger: ":co"
+  - trigger: ":cod"
     replace: "{code}"
   - trigger: ":nf"
     replace: "{noformat}"

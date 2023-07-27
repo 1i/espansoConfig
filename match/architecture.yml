@@ -1,16 +1,15 @@
 matches:
   - triggers: [":arch",":clarity"]
-    replace: |
-      Don't sacrifice clarity for brevity when creating a minimal example. 
-      Use consistent naming and indentation, and include code comments if needed. 
-      Auto format code.
+    replace: "Don't sacrifice clarity for brevity when creating a minimal example."
+  - triggers: [":arch",":clarity"]
+    replace: "Use consistent naming and indentation, and include code comments if needed. Auto format code."
   - trigger: ":tabs"
-    replace: "use spaces instead of tabs – tabs might not get correctly formatted when pasted elsewhere. Spaces will work everywhere."
+    replace: "use spaces instead of tabs – tabs may not get correctly formatted when copy/pasted elsewhere. Spaces will work everywhere."
   - triggers: [":arch",":mre"]
     replace: |
       Minimal – Use as little code as possible that still produces the same problem.
-      Complete – Provide all parts someone else needs to reproduce your problem in the question itself.
       Reproducible – Test the code you're about to provide to make sure it reproduces the problem.
+      Example – Provide all parts someone else needs to reproduce your problem in the question itself.
   - triggers: [":arch",":num"]
     replace: "when testing any system the number of inputs I would try would be 0, 1, 2, many."
   - triggers: [":arch",":reqs"]
@@ -20,7 +19,22 @@ matches:
     replace: "risks of any change are: big change? can it be easily removed? does it change data? does it change APIs? requirements clear?"
   - triggers: [":asa",]
     replace: "As a User, \nI want X, \nso that do Y"
+  - triggers: [":asa",":smokes"]
+    replace: "As a User, \nI want smoke tests run, \nso that I have confidence the new deployment has not affected the system."
   - triggers: [":asa",":asaLine"]
     replace: "As a User, I want X, so that do Y"
 
-  
+  - triggers: [":noise",":arch"]
+    replace: "reduce noise; increase gain"
+  - triggers: [":wind",":arch"]
+    replace: "shouting into the wind"
+
+  - triggers: [":yagni",":arch"]
+    replace: "You are not going to need it"
+  - triggers: [":out",":arch"]
+    replace: "When in doubt throw it out"
+
+  - triggers: [":lod",":dets",":process"]
+    replace: "Is the level of detail in this ticket good enough for refinement?"
+
+

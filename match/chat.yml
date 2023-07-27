@@ -11,7 +11,18 @@ matches:
     replace: "Thanks very much."
   - trigger: ":min"
     replace: "few minutes please"
+  - trigger: ":opin`"
+    replace: "That's just like, your opinion, man"
 
+
+
+  - trigger: ":ask"
+    replace: "Can you ask again in the main chat, hopefully someone can explain it better than I can."
+
+  - trigger: ":brb"
+    replace: "Be right back"
+  - trigger: ":afk"
+    replace: "Away from keyboard"
   - trigger: ":walk"
     replace: "popping out for a walk"
   - trigger: ":np"
